@@ -1,39 +1,150 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
-  background-color: #fff9f0;
-  color: #fffefe;
   font-family: 'Poppins', sans-serif;
+  background-color: #fff9f0;
+  color: #333;
+}
+.main-header {
+  background-color: black;
+  color: white;
+  padding: 15px;
 }
 
-header {
-  text-align: center;
-  background-color: black;
-  margin: 0;
-  padding: 2px;
-  border: 2px  black;
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  height: 60px;
 }
 
-.Mynavbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
+.restaurant-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 22px;
   margin: 0;
 }
 
-.MynavBar a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-ul{
+.search-bar {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
 }
 
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icon-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.icon-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-nav i {
+  font-size: 20px;
+}
+
+.main-header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.restaurant-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 22px;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Nav Below Title */
+.icon-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.icon-nav ul{
+  text-align: center;
+}
+
+.icon-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-nav i {
+  font-size: 20px;
+}
