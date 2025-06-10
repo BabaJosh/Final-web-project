@@ -4,31 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marigold Chinese Restaurant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <header class="main-header">
-  <div class="header-top">
-    <img src="Images/Outlook-vgqevdz2.png" alt="Logo" class="logo" />
-    <h1 class="restaurant-title">Marigold Chinese Restaurant</h1>
-    <div class="search-bar">
-      <input type="text" placeholder="Search here">
-      <button><i class="fas fa-search"></i></button>
+    <div class="header-top">
+      <img src="Images/Outlook-vgqevdz2.png" alt="Logo" class="logo" />
+      <h1 class="restaurant-title">Marigold Chinese Restaurant</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search here">
+        <button><i class="fas fa-search"></i></button>
+      </div>
     </div>
-  </div>
 
-  <nav class="icon-nav">
-    <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
-    <a href="#"><i class="fas fa-bars"></i><span>Menu</span></a>
-    <a href="#"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
-    <a href="#"><i class="fas fa-sign-in-alt"></i><span>Login</span></a>
-    <a href="#"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
-  </nav>
-</header>
+    <nav class="icon-nav">
+      <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#menu"><i class="fas fa-bars"></i><span>Menu</span></a>
+      <a href="#cart"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+      <a href="#login"><i class="fas fa-sign-in-alt"></i><span>Login</span></a>
+      <a href="#location"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <video autoplay muted loop class="background-video">
+      <source src="Images/Shot 1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+      <h2>Experience Authentic Chinese Cuisine</h2>
+      <p>Fresh, hot, and made with love.</p>
+    </div>
+  </section>
 
+  <section class="menu-gallery" id="menu">
+    <h2>Popular Dishes</h2>
+    <div class="gallery-grid">
+      <div class="dish-card">
+        <img src="Images/dish1.jpg" alt="Dish 1">
+        <h3>Sweet & Sour Chicken</h3>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="dish-card">
+        <img src="Images/dish2.jpg" alt="Dish 2">
+        <h3>Beef Chow Mein</h3>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="dish-card">
+        <img src="Images/dish3.jpg" alt="Dish 3">
+        <h3>Shrimp Fried Rice</h3>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marigold Chinese Restaurant | All rights reserved.</p>
+  </footer>
 </body>
 </html>
