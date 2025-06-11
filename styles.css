@@ -1,4 +1,4 @@
-/* Base Styles */
+/*First/all webpages*/
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff9f0;
@@ -7,8 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Header Styles */
+/* This is where alll my styling goes for the header for all webpages*/
 .main-header {
   background-color: black;
   color: white;
@@ -18,7 +17,7 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
+/* Flexbox part for the header*/
 .header-top {
   display: flex;
   align-items: center;
@@ -27,14 +26,10 @@ body {
   padding: 10px 20px;
   gap: 10px;
 }
-
+/*My logo but im going to make it clickable to make it go back to home*/
 .logo {
   height: 60px;
   
-}
-
-.logo:hover {
- 
 }
 
 .restaurant-title {
@@ -74,7 +69,7 @@ body {
   
 }
 
-/* Navigation Styles */
+/* Stuff for nav */
 .icon-nav {
   display: flex;
   justify-content: center;
@@ -99,7 +94,6 @@ body {
   width: 0%;
   height: 2px;
   bottom: -4px;
-  background-color: white;
   left: 50%;
 }
 
@@ -112,8 +106,8 @@ body {
   width: 60%;
 }
 
-/* Hero Section */
-.hero {
+/* Help me */
+.idk-what-to-name {
   position: relative;
   height: 400px;
   overflow: hidden;
@@ -126,7 +120,7 @@ body {
   opacity: 0.8;
 }
 
-.hero-text {
+.idk-too {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -134,7 +128,7 @@ body {
   color: white;
   text-align: center;
 }
-
+/*This is where all my images go i think*/
 .promo-banner {
   background: linear-gradient(to right, #f9f5f2, #fff8ec);
   padding: 60px 20px;
@@ -164,7 +158,7 @@ body {
   margin-bottom: 25px;
   color: #444;
   opacity: 0.95;
-   font-weight: bold;
+  font-weight: bold;
 }
 
 .promo-image {
@@ -174,16 +168,9 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.promo-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* Menu Gallery Section */
 .menu-gallery {
   padding: 40px 20px;
   text-align: center;
-  animation: fadeInUp 2s ease-in-out;
 }
 
 .gallery-grid {
@@ -209,11 +196,7 @@ body {
   margin-bottom: 10px;
 }
 
-.dish-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
+/*Order now stuff and styling for it*/
 .order-btn {
   background-color: black;
   color: white;
@@ -260,7 +243,7 @@ body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   font-family: 'Poppins', sans-serif;
 }
-
+/*Scrapping*/
 .login-form h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -281,7 +264,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
-
+/*Remember me though i have to say goodbye*/
 .login-form .remember-me {
   display: flex;
   align-items: center;
@@ -291,7 +274,7 @@ body {
 .login-form .remember-me input {
   margin-right: 8px;
 }
-
+/* Login but im scrapping for contact us*/
 .login-btn {
   width: 100%;
   background-color: #d62828;
@@ -318,7 +301,7 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-/* Footer */
+/* My footer*/
 footer {
   background-color: #222;
   color: #ccc;
