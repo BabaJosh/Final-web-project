@@ -29,15 +29,30 @@
   </header>
 
   <main class="menu-page">
-    <section class="menu-filters">
-      <p>All Menu</p>
-      <p>Soup of the day</p>
-      <p>Beverage</p>
+
+  <!-- Internal Navigation Links -->
+  <section class="menu-filters">
+    <nav class="menu-nav">
+      <a href="#menu">All Menu</a>
+      <a href="#soup">Soup of the Day</a>
+      <a href="#beverages">Beverages</a>
+    </nav>
+    <section class="video-banner">
+  <video autoplay muted loop class="menu-video">
+    <source src="Images/Shot 2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <div class="video-overlay">
+      <h2>Our Chef’s Specials</h2>
+      <p>Freshly made. Daily curated. Authentic.</p>
+    </div>
     </section>
 
+  </section>
    <section class="menu-gallery" id="menu">
-  <h2>Popular Dishes</h2>
-  <div class="gallery-grid">
+    <h2>Popular Dishes</h2>
+    <div class="gallery-grid">
+      <div class="gallery-grid">
     <!-- Dish 1 -->
     <div class="dish-card">
       <img src="Images/fried-chicken-vegetables-sauce-with-sesame.jpg" alt="Dish 1" />
@@ -85,8 +100,41 @@
     </div>
   </div>
 </section>
+  <!-- Soup of the Day Section -->
+  <section class="menu-gallery" id="soup">
+    <h2>Soup of the Day</h2>
+    <div class="gallery-grid">
+      <div class="dish-card">
+        <img src="Images/placeholder.jpg" alt="Hot & Sour Soup" />
+        <h3>Hot & Sour Soup</h3>
+        <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+      </div>
+      <div class="dish-card">
+        <img src="Images/placeholder.jpg" alt="Wonton Soup" />
+        <h3>Wonton Soup</h3>
+        <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Beverages Section -->
+  <section class="menu-gallery" id="beverages">
+    <h2>Beverages</h2>
+    <div class="gallery-grid">
+      <div class="dish-card">
+        <img src="Images/placeholder.jpg" alt="Chrysanthemum Tea" />
+        <h3>Chrysanthemum Tea</h3>
+        <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+      </div>
+      <div class="dish-card">
+        <img src="Images/placeholder.jpg" alt="Plum Juice" />
+        <h3>Plum Juice</h3>
+        <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
 
+</main>
   <footer>
     <p>&copy; 2025 Marigold Chinese Restaurant | All rights reserved.</p>
   </footer>
