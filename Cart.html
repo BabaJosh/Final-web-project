@@ -7,9 +7,48 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* Additional styles for enhanced cart */
+    .cart-item-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .quantity-btn {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      background: white;
+      cursor: pointer;
+    }
+    .remove-item {
+      color: #e74c3c;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .price-summary {
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .price-summary p {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+    .price-summary .total {
+      font-weight: bold;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
- <header class="main-header">
+  <header class="main-header">
     <div class="header-top">
       <img src="Images/Outlook-vgqevdz2.png" alt="Logo of Marigold Chinese" class="logo" />
       <h1 class="restaurant-title">Marigold Chinese Restaurant</h1>
@@ -30,44 +69,124 @@
   <main class="cart-container">
     <h2>Your Cart</h2>
 
-    <div class="cart-item">
-      <img src="Images/fried-chicken-vegetables-sauce-with-sesame.jpg" alt="Sweet & Sour Chicken" />
-      <div class="cart-details">
-        <h4>Sweet & Sour Chicken</h4>
-        <p>Quantity: 1</p>
-        <p>Price: $12.99</p>
-      </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be dynamically inserted here -->
     </div>
 
-    <div class="cart-item">
-      <img src="Images/noodles-with-beef-vegetables-black-table.jpg" alt="Beef Chow Mein" />
-      <div class="cart-details">
-        <h4>Beef Chow Mein</h4>
-        <p>Quantity: 2</p>
-        <p>Price: $13.99</p>
-      </div>
-    </div>
-
-    <div class="cart-item">
-      <img src="Images/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg" alt="Shrimp Fried Rice" />
-      <div class="cart-details">
-        <h4>Shrimp Fried Rice</h4>
-        <p>Quantity: 1</p>
-        <p>Price: $14.99</p>
-      </div>
-    </div>
-
-    <div class="cart-total">
-      Total: $55.96
+    <div class="price-summary">
+      <p><span>Subtotal:</span> <span id="subtotal">$0.00</span></p>
+      <p><span>GST (5%):</span> <span id="gst">$0.00</span></p>
+      <p><span>PST (7%):</span> <span id="pst">$0.00</span></p>
+      <p class="total"><span>Total:</span> <span id="total">$0.00</span></p>
     </div>
 
     <div class="checkout-container">
-      <button class="checkout-btn"><p></p>Proceed to Checkout</p></button>
+      <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Marigold Chinese Restaurant | All rights reserved.</p>
+    <p>2025 Marigold Chinese Restaurant. If you copy me , I won't hesistate to sue you.</p>
   </footer>
+
+  <script>
+    // Sample cart data (replace with your actual data source)
+    const cartItems = [
+      {
+        id: 1,
+        name: "Sweet & Sour Chicken",
+        image: "Images/fried-chicken-vegetables-sauce-with-sesame.jpg",
+        price: 12.99,
+        quantity: 1
+      },
+      {
+        id: 2,
+        name: "Beef Chow Mein",
+        image: "Images/noodles-with-beef-vegetables-black-table.jpg",
+        price: 13.99,
+        quantity: 2
+      },
+      {
+        id: 3,
+        name: "Shrimp Fried Rice",
+        image: "Images/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg",
+        price: 14.99,
+        quantity: 1
+      }
+    ];
+
+    // Render cart items
+    function renderCart() {
+      const cartItemsContainer = document.getElementById('cartItems');
+      cartItemsContainer.innerHTML = '';
+
+      let subtotal = 0;
+
+      cartItems.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
+
+        const cartItemElement = document.createElement('div');
+        cartItemElement.className = 'cart-item';
+        cartItemElement.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" />
+          <div class="cart-details">
+            <h4>${item.name}</h4>
+            <p>Price: $${item.price.toFixed(2)}</p>
+            <div class="cart-item-controls">
+              <button class="quantity-btn minus" data-id="${item.id}">-</button>
+              <span>${item.quantity}</span>
+              <button class="quantity-btn plus" data-id="${item.id}">+</button>
+              <span class="remove-item" data-id="${item.id}">Remove</span>
+            </div>
+          </div>
+        `;
+        cartItemsContainer.appendChild(cartItemElement);
+      });
+
+      // Calculate taxes and total
+      const gst = subtotal * 0.05;
+      const pst = subtotal * 0.07;
+      const total = subtotal + gst + pst;
+
+      // Update summary
+      document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+      document.getElementById('gst').textContent = `$${gst.toFixed(2)}`;
+      document.getElementById('pst').textContent = `$${pst.toFixed(2)}`;
+      document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+    }
+
+    // Event delegation for quantity buttons
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('quantity-btn')) {
+        const itemId = parseInt(e.target.dataset.id);
+        const item = cartItems.find(item => item.id === itemId);
+        
+        if (e.target.classList.contains('plus')) {
+          item.quantity++;
+        } else if (e.target.classList.contains('minus') && item.quantity > 1) {
+          item.quantity--;
+        }
+        
+        renderCart();
+      }
+
+      if (e.target.classList.contains('remove-item')) {
+        const itemId = parseInt(e.target.dataset.id);
+        const itemIndex = cartItems.findIndex(item => item.id === itemId);
+        cartItems.splice(itemIndex, 1);
+        renderCart();
+      }
+    });
+
+    // Checkout button
+    document.getElementById('checkoutBtn').addEventListener('click', function() {
+      alert('Items Checked out!');
+      // Add your checkout logic here
+    });
+
+    // Initial render
+    renderCart();
+  </script>
 </body>
 </html>

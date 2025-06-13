@@ -1,4 +1,5 @@
 /*First/all webpages*/
+/* I chose poppins as my sans serif style becuase I really like its bold and modern design and I think the customers would love it too.*/
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff9f0;
@@ -65,9 +66,6 @@ body {
   cursor: pointer;
 }
 
-.search-bar:hover {
-  
-}
 
 /* Stuff for nav */
 .icon-nav {
@@ -106,7 +104,7 @@ body {
   width: 60%;
 }
 
-/* Help me */
+/* This for my backgorund videos*/
 .idk-what-to-name {
   position: relative;
   height: 400px;
@@ -227,22 +225,8 @@ body {
   background-color: #f50000;
   transform: scale(1.05);
 }
-.login-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-}
 
-.login-form {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 400px;
-  width: 100%;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  font-family: 'Poppins', sans-serif;
-}
+
 .items-of-the-day {
   padding: 50px 20px;
   background-color: #fff;
@@ -354,7 +338,7 @@ body {
   background-color: #b91c1c;
 }
 
-/*Scrapping*/
+/*Contact form*/
 .contact-page {
   padding: 2rem;
   font-family: 'Poppins', sans-serif;
@@ -394,7 +378,7 @@ body {
   margin-bottom: 1rem;
   border-radius: 5px;
 }
- .rating {
+.rating {
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
@@ -426,7 +410,7 @@ body {
     .review-form textarea {
       resize: vertical;
     }
-    /* === CART PAGE STYLES === */
+    /*  My cart */
 
 .cart-container {
   max-width: 900px;
@@ -514,6 +498,9 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 
 /* My footer*/

@@ -1,3 +1,8 @@
+<!-- Name: Josh Oladokun -->
+<!-- Date: June 12th 2025 -->
+<!-- Date modified: June 12th 2025 -->
+<!-- Teacher: AShley Hoitink -->
+<!-- Course: Web dev 30s -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,95 +14,84 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- First header class is for styling and other one is for resizing, so flex -->
   <header class="main-header">
     <div class="header-top">
-      <img src="Images/Outlook-vgqevdz2.png" alt="Logo of Marigold Chinese" class="logo" />
-      <h1 class="restaurant-title">Marigold Chinese Restaurant</h1>
-      <!-- Styling class for search bar -->
-      <div class="search-bar">
-        <!-- What I made for search bar -->
-        <input type="text" placeholder="Search here">
-        <button><i class="icon-nav"></i></button>
+      <img src="Images/Outlook-vgqevdz2.png" alt="Logo of Marigold Chinese" class="logo" tabindex="1" />
+      <h1 class="restaurant-title" tabindex="0">Marigold Chinese Restaurant</h1>
+      <div class="search-bar" tabindex="0">
+        <input type="text" placeholder="Search here" tabindex="0">
+        <button tabindex="0"><i class="fas fa-search"></i></button>
       </div>
     </div>
-    <!-- Nav bar -->
-    <nav class="icon-nav">
-      <a href="Index.html"><i class="icon-nav"></i><span>Home</span></a>
-      <a href="Menu.html"><i class="icon-nav"></i><span>Menu</span></a>
-      <a href="Cart.html"><i class="icon-nav"></i><span>Cart</span></a>
-      <a href="login.html"><i class="icon-nav"></i><span>Login</span></a>
-      <a href="location.html"><i class="icon-nav"></i><span>Location</span></a>
+    <nav class="icon-nav" tabindex="0">
+      <a href="Index.html" tabindex="0"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="Menu.html" tabindex="0"><i class="fas fa-utensils"></i><span>Menu</span></a>
+      <a href="Cart.html" tabindex="0"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+      <a href="contact.html" tabindex="0"><i class="fas fa-user"></i><span>Login</span></a>
+      <a href="location.html" tabindex="0"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
     </nav>
   </header>
 
-  <section class="idk-what-to-name">
-    <!-- My video just below my header -->
+  <section class="idk-what-to-name" tabindex="0">
     <video autoplay muted loop class="background-video">
       <source src="Images/Shot 1.mp4" type="video/mp4">
     </video>
     <div class="idk-too">
-      <!-- Filler text, not actully what im gonna use -->
-      <h2>Experience Authentic Chinese Cuisine</h2>
-      <p>Fresh, hot, and made with love.</p>
+      <h2 tabindex="0">Experience Authentic Chinese Cuisine</h2>
+      <p tabindex="0">Fresh, hot, and made with love.</p>
     </div>
   </section>
-  <section class="promo-banner">
-    <a href="Menu.html" class="promo-link">
+
+  <section class="promo-banner" tabindex="0">
+    <a href="Menu.html" class="promo-link" tabindex="0">
       <div class="promo-content">
-        <!-- My slogan(IN progress) -->
-        <h2>Savor the Flavor</h2>
-        <h2>Slay the day the Chinese Way!</h2>
-        <p>Fuel your day with bold flavors and authentic wok-fired dishes.</p>
-        <img src="Images/Xiao-Long-Bao-FK.jpg" alt="Xia Long Bao" class="promo-image" />
-        <p>Xia Long Bao</p>
+        <h2 tabindex="0">Savor the Flavor</h2>
+        <p tabindex="0">Fuel your day with bold flavors and authentic wok-fired dishes.</p>
+        <img src="Images/Xiao-Long-Bao-FK.jpg" alt="Xiao Long Bao" class="promo-image" tabindex="0" />
+        <p tabindex="0">Xiao Long Bao</p>
       </div>
     </a>
   </section>
-<section class="items-of-the-day">
-  <h2>Items of the Day</h2>
-  <div class="gallery-grid">
-    <div class="dish-card">
-      <img src="Images/ItemsOfDay1.jpg" alt="Item of the Day 1" />
-      <h3>Spicy Szechuan Noodles</h3>
-      <a href="Menu.html" class="order-btn">Order Now</a>
-    </div>
-     <div class="dish-card">
-      <img src="Images/ItemsOfDay2.jpg" alt="Item of the Day 2" />
-      <h3>General Tso’s Chicken</h3>
-      <a href="Menu.html" class="order-btn">Order Now</a>
-    </div>
-  </div>
-</section>
 
-  <section class="menu-gallery" id="menu">
-    <h2>Popular Dishes</h2>
-    <!-- This first thing applies evrything in this div to make my image gallery in my other webpage -->
+  <section class="items-of-the-day" tabindex="0">
+    <h2 tabindex="0">Items of the Day</h2>
     <div class="gallery-grid">
-      <div class="dish-card">
-
-        <img src="Images/fried-chicken-vegetables-sauce-with-sesame.jpg" alt="Image of sweet and sour chicken" />
-        <h3>Sweet & Sour Chicken</h3>
-        <a href="Menu.html" class="order-btn">Order Now</a>
+      <div class="dish-card" tabindex="0">
+        <img src="Images/download.jpg" alt="Spicy Szechuan Noodles" />
+        <h3 tabindex="0">Spicy Szechuan Noodles</h3>
+        <a href="Menu.html" class="order-btn" tabindex="0">Order Now</a>
       </div>
-      <!-- All uses the same class for simple styling -->
-      <div class="dish-card">
-        <img src="Images/noodles-with-beef-vegetables-black-table.jpg" alt="image of beef chow mein" />
-        <h3>Beef Chow Mein</h3>
-        <a href="Menu.html" class="order-btn">Order Now</a>
-      </div>
-      <div class="dish-card">
-        <img src="Images/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg" alt="Shrimp fried rice" />
-        <h3>Shrimp Fried Rice</h3>
-        <a href="Menu.html" class="order-btn">Order Now</a>
+      <div class="dish-card" tabindex="0">
+        <img src="Images/download (1).jpg" alt="General Tso's Chicken" />
+        <h3 tabindex="0">General Tso’s Chicken</h3>
+        <a href="Menu.html" class="order-btn" tabindex="0">Order Now</a>
       </div>
     </div>
   </section>
-  
-<!-- Semantic tag for my footer -->
-  <footer>
-    <p> 2025 Marigold Chinese Restaurant.If you copy me , I won't hesistate to sue you.</p>
+
+  <section class="menu-gallery" id="menu" tabindex="0">
+    <h2 tabindex="0">Popular Dishes</h2>
+    <div class="gallery-grid">
+      <div class="dish-card" tabindex="0">
+        <img src="Images/fried-chicken-vegetables-sauce-with-sesame.jpg" alt="Sweet & Sour Chicken" />
+        <h3 tabindex="0">Sweet & Sour Chicken</h3>
+        <a href="Menu.html" class="order-btn" tabindex="0">Order Now</a>
+      </div>
+      <div class="dish-card" tabindex="0">
+        <img src="Images/noodles-with-beef-vegetables-black-table.jpg" alt="Beef Chow Mein" />
+        <h3 tabindex="0">Beef Chow Mein</h3>
+        <a href="Menu.html" class="order-btn" tabindex="0">Order Now</a>
+      </div>
+      <div class="dish-card" tabindex="37">
+        <img src="Images/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg" alt="Shrimp Fried Rice" />
+        <h3 tabindex="0">Shrimp Fried Rice</h3>
+        <a href="Menu.html" class="order-btn" tabindex="39">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer tabindex="0">
+    <p tabindex="0">&copy; 2025 Marigold Chinese Restaurant. If you copy me, I won't hesitate to sue you.</p>
   </footer>
 </body>
 </html>
-

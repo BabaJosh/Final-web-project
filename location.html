@@ -3,10 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Location - Marigold Chinese Restaurant</title>
+  <title>Locations - Marigold Chinese Restaurant</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* Additional styles for locations page */
+    .location-page {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .locations-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .location-card {
+      flex: 1;
+      min-width: 300px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .map-container {
+      height: 300px;
+    }
+    .location-info {
+      padding: 20px;
+    }
+    .location-info h3 {
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+    .location-info p {
+      margin: 8px 0;
+    }
+    .location-info i {
+      margin-right: 10px;
+      color: #e67e22;
+    }
+  </style>
 </head>
 <body>
   <header class="main-header">
@@ -19,32 +58,68 @@
       </div>
     </div>
     <nav class="icon-nav">
-      <a href="Index.html"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href="Menu.html"><i class="fas fa-bars"></i><span>Menu</span></a>
-      <a href="Cart.html"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
-      <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
-      <a href="location.html"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
+      <a href="Index.html"><i class="icon-nav"></i><span>Home</span></a>
+      <a href="Menu.html"><i class="icon-nav"></i><span>Menu</span></a>
+      <a href="Cart.html"><i class="icon-nav"></i><span>Cart</span></a>
+      <a href="contact.html"><i class="icon-nav"></i><span>Contact</span></a>
+      <a href="location.html"></a><i class="icon-nav"></i><span>Location</span></a>
     </nav>
   </header>
 
   <main class="location-page">
-    <h2>Visit Us</h2>
-    <p class="address-text">487 St. Mary's Road, Winnipeg, MB</p>
+    <h2>Our Locations</h2>
+    <p>Check out our restaurants in your area. Click below for directions.</p>
     
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps?q=487+St+Mary's+Road,+Winnipeg,+MB&output=embed" 
-        width="100%" 
-        height="400" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
+    <div class="locations-container">
+      <!-- St. Mary's Location -->
+      <div class="location-card">
+        <div class="map-container">
+          <!-- Iframe -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.341302061581!2d-97.1193029235396!3d49.85575377149027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715850fbd0a7%3A0x9c7a8a6a6e3a3a6a!2s487%20St%20Mary&#39;s%20Rd%2C%20Winnipeg%2C%20MB%20R2M%203L2!5e0!3m2!1sen!2sca!4v1620000000000!5m2!1sen!2sca" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="location-info">
+          <h3>St. Mary's Road</h3>
+          <p><i class="location-info"></i> 487 St. Mary's Road, Winnipeg, MB</p>
+          <p><i class="location-info"></i> Open Daily: 11AM - 10PM</p>
+          <a href="https://maps.google.com?q=487+St+Mary's+Road,+Winnipeg,+MB" target="_blank" class="directions-btn">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- Osborne Street Location -->
+      <div class="location-card">
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.341302061581!2d-97.1193029235396!3d49.85575377149027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715850fbd0a7%3A0x9c7a8a6a6e3a3a6a!2s718%20Osborne%20St%2C%20Winnipeg%2C%20MB%20R3L%202B9!5e0!3m2!1sen!2sca!4v1620000000000!5m2!1sen!2sca" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="location-info">
+          <h3>Osborne Village</h3>
+          <p><i class="location-info"></i> 718 Osborne Street, Winnipeg, MB</p>
+          <p><i class="fas fa-clock"></i> Open Daily: 11AM - 11PM</p>
+          <a href="https://maps.google.com?q=718+Osborne+Street,+Winnipeg,+MB" target="_blank" class="directions-btn">
+            Get Directions
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Marigold Chinese Restaurant | All rights reserved.</p>
+    <p>2025 Marigold Chinese Restaurant. If you copy me , I won't hesistate to sue you.</p>
   </footer>
 </body>
 </html>

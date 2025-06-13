@@ -15,16 +15,16 @@
       <h1 class="restaurant-title">Marigold Chinese Restaurant</h1>
       <div class="search-bar">
         <input type="text" placeholder="Search here">
-        <button><i class="fas fa-search"></i></button>
+        <button><i class="icon-nav"></i></button>
       </div>
     </div>
 
     <nav class="icon-nav">
-      <a href="Index.html"><i class="fas fa-home"></i><span>Home</span></a>
-      <a href="Menu.html"><i class="fas fa-bars"></i><span>Menu</span></a>
-      <a href="Cart.html"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
-      <a href="login.html"><i class="fas fa-sign-in-alt"></i><span>Login</span></a>
-      <a href="location.html"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
+      <a href="Index.html"><i class="icon-nav"></i><span>Home</span></a>
+      <a href="Menu.html"><i class="icon-nav"></i><span>Menu</span></a>
+      <a href="Cart.html"><i class="icon-nav"></i><span>Cart</span></a>
+      <a href="login.html"><i class="icon-nav"></i><span>Login</span></a>
+      <a href="location.html"><i class="icon-nav"></i><span>Location</span></a>
     </nav>
   </header>
 
@@ -35,7 +35,7 @@
     <nav class="menu-nav">
       <a href="#menu">All Menu</a>
       <a href="#soup">Soup of the Day</a>
-      <a href="#beverages">Beverages</a>
+      <a href="#beverages">Beverages/Soups</a>
     </nav>
     <section class="video-banner">
   <video autoplay muted loop class="menu-video">
@@ -48,69 +48,120 @@
     </div>
     </section>
 
-  </section>
-   <section class="menu-gallery" id="menu">
-    <h2>Popular Dishes</h2>
+<section class="menu-gallery" id="menu">
+    <h2>All Menu</h2>
     <div class="gallery-grid">
-      <div class="gallery-grid">
-    <!-- Dish 1 -->
-    <div class="dish-card">
-      <img src="Images/fried-chicken-vegetables-sauce-with-sesame.jpg" alt="Dish 1" />
-      <h3>Sweet & Sour Chicken</h3>
-      <p class="price">$12.99</p>
-      <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
-    </div>
+        <!-- Existing dishes (8 items) -->
+        <!-- Dish 1 -->
+        <div class="dish-card">
+            <img src="Images/fried-chicken-vegetables-sauce-with-sesame.jpg" alt="Sweet & Sour Chicken" />
+            <h3>Sweet & Sour Chicken</h3>
+            <p class="price">$12.99</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
 
-    <!-- Dish 2 -->
-    <div class="dish-card">
-      <img src="Images/noodles-with-beef-vegetables-black-table.jpg" alt="Dish 2" />
-      <h3>Beef Chow Mein</h3>
-      <p class="price">$13.99</p>
-      <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
-    </div>
+        <!-- Dish 2 -->
+        <div class="dish-card">
+            <img src="Images/noodles-with-beef-vegetables-black-table.jpg" alt="Beef Chow Mein" />
+            <h3>Beef Chow Mein</h3>
+            <p class="price">$13.99</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
 
-    <!-- Dish 3 -->
-    <div class="dish-card">
-      <img src="Images/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg" alt="Shrimp Fried Rice" />
-      <h3>Shrimp Fried Rice</h3>
-      <p class="price">$14.99</p>
-      <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
-    </div>
+        <!-- Dish 3 -->
+        <div class="dish-card">
+            <img src="Images/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg" alt="Shrimp Fried Rice" />
+            <h3>Shrimp Fried Rice</h3>
+            <p class="price">$14.99</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
 
-    <!-- Placeholder Dishes -->
-    <div class="dish-card">
-      <img src="Images/placeholder.jpg" alt="Coming Soon" />
-      <h3>Kung Pao Chicken</h3>
-      <p class="price">$13.99</p>
-      <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
-    </div>
+        <!--Other Dishes -->
+        <div class="dish-card">
+            <img src="Images/download (2).jpg"alt="Kung Pao Chicken" />
+            <h3>Kung Pao Chicken</h3>
+            <p class="price">$13.99</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
 
-    <div class="dish-card">
-      <img src="Images/placeholder.jpg" alt="Coming Soon" />
-      <h3>Spring Rolls</h3>
-      <p class="price">$6.99</p>
-      <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
-    </div>
+        <div class="dish-card">
+            <img src="Images/download (4).jpg" alt="Spring Rolls" />
+            <h3>Spring Rolls</h3>
+            <p class="price">$6.99</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
 
-    <div class="dish-card">
-      <img src="Images/placeholder.jpg" alt="Coming Soon" />
-      <h3>Wonton Soup</h3>
-      <p class="price">$9.49</p>
-      <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        <div class="dish-card">
+            <img src="Images/download (5).jpg" alt="Ginger Beef" />
+            <h3>Ginger Beef</h3>
+            <p class="price">$9.49</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+        
+        <div class="dish-card">
+            <img src="Images/download (6).jpg" alt="Hot & Sour Soup" />
+            <h3>Hot & Sour Soup</h3>
+            <p class="price">$5.99</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+        
+        <div class="dish-card">
+            <img src="Images/download (7).jpg" alt="Wonton Soup" />
+            <h3>Wonton Soup</h3>
+            <p class="price">$6.49</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="dish-card">
+            <img src="Images/download (8).jpg" alt="Sprite" />
+            <h3>Sprite</h3>
+            <p class="price">$2.50</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+        <div class="dish-card">
+            <img src="Images/download (9).jpg" alt="Iced Tea" />
+            <h3>Iced Tea</h3>
+            <p class="price">$2.75</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+        <div class="dish-card">
+            <img src="Images/download (10).jpg" alt="Jasmine Tea" />
+            <h3>Jasmine Tea</h3>
+            <p class="price">$3.25</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+        <div class="dish-card">
+            <img src="Images/download (11).jpg" alt="Plum Juice" />
+            <h3>Plum Juice</h3>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+        <div class="dish-card">
+            <img src="Images/download (12).jpg" alt="Chrysanthemum Tea" />
+            <h3>Chrysanthemum Tea</h3>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
     </div>
-  </div>
+</section>
+    </div>
+</section>
+  
 </section>
   <!-- Soup of the Day Section -->
   <section class="menu-gallery" id="soup">
-    <h2>Soup of the Day</h2>
+    <h2>Soups of the Day</h2>
     <div class="gallery-grid">
       <div class="dish-card">
-        <img src="Images/placeholder.jpg" alt="Hot & Sour Soup" />
+        <img src="Images/download (6).jpg" alt="Hot & Sour Soup" />
         <h3>Hot & Sour Soup</h3>
         <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
       </div>
+
       <div class="dish-card">
-        <img src="Images/placeholder.jpg" alt="Wonton Soup" />
+        <img src="Images/download (7).jpg" alt="Wonton Soup" />
         <h3>Wonton Soup</h3>
         <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
       </div>
@@ -122,21 +173,58 @@
     <h2>Beverages</h2>
     <div class="gallery-grid">
       <div class="dish-card">
-        <img src="Images/placeholder.jpg" alt="Chrysanthemum Tea" />
+
+        <img src="Images/download (12).jpg" alt="Chrysanthemum Tea" />
         <h3>Chrysanthemum Tea</h3>
         <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
       </div>
+
       <div class="dish-card">
-        <img src="Images/placeholder.jpg" alt="Plum Juice" />
+        <img src="Images/download (11).jpg" alt="Plum Juice" />
         <h3>Plum Juice</h3>
         <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+        <div class="dish-card">
+            <img src="Images/download (8).jpg " alt="Sprite" />
+            <h3>Sprite</h3>
+            <p class="price">$2.50</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+        <div class="dish-card">
+            <img src="Images/download (9).jpg" alt="Iced Tea" />
+            <h3>Iced Tea</h3>
+            <p class="price">$2.75</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
+
+  
+        </div>
+
+        <div class="dish-card">
+            <img src="Images/download (10).jpg" alt="Jasmine Tea" />
+            <h3>Jasmine Tea</h3>
+            <p class="price">$3.25</p>
+            <a href="Menu.html" class="add-cart-btn">Add to Cart</a>
+        </div>
       </div>
     </div>
   </section>
+  <section class="menu-gallery" id="soups">
+  <h2>Soups</h2>
+  <div class="gallery-grid">
+    <div class="dish-card">
+      <img src="Images/download (7).jpg" alt="Wonton Soup" />
+      <h3>Wonton Soup</h3>
+      <a href="Menu.html" class="order-btn">Add to Cart</a>
+    </div>
+  </div>
+</section>
 
 </main>
   <footer>
-    <p>&copy; 2025 Marigold Chinese Restaurant | All rights reserved.</p>
+    <p>2025 Marigold Chinese Restaurant. If you copy me , I won't hesistate to sue you..</p>
   </footer>
 </body>
 </html>
